@@ -24,7 +24,7 @@ export default function HeaderPage({ title, useBread, useParent, parent, isPage 
                 <Breadcrumb className="mt-2 pl-1">
                     <BreadcrumbList>
                         <BreadcrumbItem>
-                            <BreadcrumbLink onClick={() => router.push('/')} className="cursor-pointer">
+                            <BreadcrumbLink onClick={() => router.push('/dashboard')} className="cursor-pointer">
                                 Dashboard
                             </BreadcrumbLink>
                         </BreadcrumbItem>

@@ -12,20 +12,20 @@ export const data = {
         icon: LayoutDashboard,
       },
       {
+        title: "Master Data",
+        icon: BookOpen,
+        url: "/master-data",
+        items: [
+          {
+            title: "Kelas",
+            url: "/kelas",
+          },
+        ],
+      },
+      {
         title: "Siswa",
         url: "/siswa",
         icon: Users,
-      },
-      {
-        title: "Documentation",
-        url: "#",
-        icon: BookOpen,
-        items: [
-          {
-            title: "Introduction",
-            url: "#",
-          },
-        ],
       },
     ],
   }

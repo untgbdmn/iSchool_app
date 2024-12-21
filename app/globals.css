@@ -33,3 +33,68 @@ body {
 .gradient-background-purple {
     @apply bg-gradient-to-r from-violet-600 to-purple-800 text-white;
 }
+
+@layer components {
+    /* Card */
+    .card {
+        @apply bg-white w-full rounded-md shadow-lg p-2;
+    }
+    .card .card-header {
+        @apply px-2 py-4 bg-white flex flex-row items-center;
+    }
+    .card .card-body {
+        @apply px-2 py-2 ;
+    }
+    .card-header #search {
+        @apply py-1 w-full max-w-[50%];
+    }
+
+    /* Table */
+    .table {
+        @apply w-full;
+    }
+    .table thead tr th {
+        @apply py-2;
+    }
+    .table tbody tr td {
+        @apply py-2 text-center;
+    }
+
+    /* Button */
+    .btn {
+        @apply px-4 py-2 rounded-md;
+    }
+    .btn-primary {
+        @apply bg-violet-600 text-white font-semibold;
+    }
+    .btn-secondary {
+        @apply text-violet-600 font-semibold border border-violet-600;
+    }
+
+    .form-group {
+        @apply flex flex-col gap-1;
+    }
+    .form-group label {
+        @apply text-sm font-semibold;
+    }
+    .form-group input {
+        @apply py-1 px-2 rounded-md border border-violet-500 focus:border focus:border-violet-600 focus:outline-violet-600 placeholder:text-sm placeholder:text-violet-950 focus:bg-violet-50;
+    }
+    .form-group select {
+        @apply py-1.5 px-2 rounded-md border border-violet-500 focus:border focus:border-violet-600 focus:outline-violet-600 placeholder:text-sm placeholder:text-violet-950;
+    }
+}
+
+#action {
+    @apply cursor-pointer;
+}
+
+#search {
+    @apply border rounded-md outline-none pl-9 focus:outline focus:outline-violet-600;
+}
+
+.logo-text {
+    @apply bg-gradient-to-bl from-violet-900 to-purple-400;
+    color: transparent;
+    -webkit-background-clip: text;
+}
