@@ -1,10 +1,6 @@
 "use client"
 
 import * as React from "react"
-import {
-    Command,
-} from "lucide-react"
-
 import { NavMain } from "@/components/nav-main"
 import {
     Sidebar,
@@ -18,6 +14,9 @@ import {
 import { data } from "@/assets/menu/menu"
 import Image from "next/image"
 import Logo from "../assets/icon/logo.svg"
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "./ui/dropdown-menu"
+import LogOut from "./log-out"
+import FooterSidebar from "./footer-sidebar"
 
 
 
@@ -45,7 +44,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                 <NavMain items={data.navMain} />
             </SidebarContent>
             <SidebarFooter>
-                {/*  */}
+                <FooterSidebar />
             </SidebarFooter>
         </Sidebar>
     )

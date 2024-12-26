@@ -18,7 +18,7 @@ export default function GuestLayout({children}:GuestLayoutProps ) {
                 </div>
                 <div className="flex flex-row items-center gap-5">
                     <Link href="/login" className='px-5 bg-violet-600 text-white font-semibold py-2 rounded-md'>Login</Link>
-                    <Link href="/login" className='px-5 rounded-md border-violet-700 py-2 border-2 text-violet-700'>Register</Link>
+                    <Link href="/register" className='px-5 rounded-md border-violet-700 py-2 border-2 text-violet-700'>Register</Link>
                 </div>
             </div>
         </div>

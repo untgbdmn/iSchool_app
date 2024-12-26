@@ -78,7 +78,7 @@ body {
         @apply text-sm font-semibold;
     }
     .form-group input {
-        @apply py-1 px-2 rounded-md border border-violet-500 focus:border focus:border-violet-600 focus:outline-violet-600 placeholder:text-sm placeholder:text-violet-950 focus:bg-violet-50;
+        @apply py-1.5 px-2 rounded-md border border-violet-500 focus:border focus:border-violet-600 focus:outline-violet-600 placeholder:text-sm placeholder:text-violet-950 focus:bg-violet-50;
     }
     .form-group select {
         @apply py-1.5 px-2 rounded-md border border-violet-500 focus:border focus:border-violet-600 focus:outline-violet-600 placeholder:text-sm placeholder:text-violet-950;
@@ -98,3 +98,33 @@ body {
     color: transparent;
     -webkit-background-clip: text;
 }
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out;
+  }
+
+  .animate-fade-out {
+    animation: fadeOut 0.5s ease-out forwards;
+  }
